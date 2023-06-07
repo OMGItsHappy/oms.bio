@@ -22,8 +22,13 @@ body {
     background-color: #c2c094;
 }
 
-.navbar, footer {
+.navbar {
     background-color: #a9a587;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
 }
 
 /* Dropdown Button */

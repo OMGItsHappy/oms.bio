@@ -18,12 +18,16 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #c2c094;
+}
+
+.navbar, footer {
+    background-color: #a9a587;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: white;
     color: Black;
     padding: 16px;
     font-size: 16px;

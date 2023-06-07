@@ -19,15 +19,24 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+
                         @foreach ( var person in oms.bio.Helpers.MyFunctions.GetControllerNames())
                         {
                             if (person.Contains("Home")) continue;
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller=@person.Replace("Controller", "") asp-action="Me">@person.Replace("Controller", "")</a>
-                            </li>
+                            <div class="dropdown">
+                                <button class="dropbtn">@person.Replace("Controller", "")</button>
+                                <div class="dropdown-content">
+                                    <a href="/@person.Replace("Controller", "")/me">My Page</a>
+                                    <a href="/">Home</a>
+                                </div>
+                            </div>
                         }
                     </ul>
                 </div>
+
+
+                    
+
             </div>
         </nav>
     </header>

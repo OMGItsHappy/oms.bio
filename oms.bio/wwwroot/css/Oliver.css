@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+:root {
+    --azure-web: #cee0dcff;
+    --columbia-blue: #b9cfd4ff;
+    --rose-quartz: #afaab9ff;
+    --puce: #b48291ff;
+    --amaranth-purple: #a5243dff;
+}
+
+.socials-footer {
+    min-height:30px;
+    background-color:var(--amaranth-purple);
+    bottom:0;
+    width:100%;
+    left:0;
+    text-align:center;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.navbar {
+    background-color: var(--amaranth-purple);
+}
+
+img {
+    max-width: 100%;
+    box-shadow: 0 0 10px 3px #808080;
+}
